@@ -1,0 +1,60 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# bayeRisch
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+The goal of `bayeRisch` is to translate German into Bavarian (German dialect). `bayeRisch` is built upon [this tool](https://www.respekt-empire.de/Translator/?page=translateEngine) by Andi Hummel and simply provides an interface to it.
+
+## Installation
+
+You can install the development version of `bayeRisch` from GitHub with:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("favstats/bayeRisch")
+```
+
+## Example
+
+This is a basic example:
+
+```{r example}
+library(bayeRisch)
+## basic example code
+```
+
+
+```{r}
+get_bayerisch("Ja, ich hätte gern ein Bier bitte.")
+```
+
+
+```{r}
+get_bayerisch("Angezapft ist.")
+```
+
+
+```{r}
+get_bayerisch("Es gibt nichts besser als was gutes.")
+```
+
+```{r}
+get_bayerisch("Das ist gehüpft wie gesprungen.")
+```
+
